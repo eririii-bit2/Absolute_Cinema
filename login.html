@@ -10,7 +10,7 @@
 </head>
 <body>
   <!-- Navigation Header -->
-  <nav class="navbar navbar-expand-lg sticky-top border-bottom border-dark py-3" style="background-color: rgba(10,11,16,0.95); backdrop-filter: blur(10px);">
+<nav class="navbar navbar-expand-lg sticky-top border-bottom border-dark py-3" style="background-color: rgba(10,11,16,0.95); backdrop-filter: blur(10px);">
     <div class="container">
       <a class="navbar-brand cinema-brand d-flex align-items-center gap-2" href="index.html">
         <i class="bi bi-film fs-3"></i> ABSOLUTE CINEMA
@@ -20,20 +20,12 @@
       </button>
       <div class="collapse navbar-collapse" id="navContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-          <li class="nav-item"><a class="nav-link text-secondary" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link text-secondary" href="categories.html">Categories</a></li>
-          <li class="nav-item"><a class="nav-link text-secondary" href="location.html">Cinema Location</a></li>
+          <li class="nav-item"><a class="nav-link active fw-bold text-white" href="index.html">Home</a></li>  
         </ul>
-        <form class="d-flex me-3" action="search.html" method="GET">
-          <div class="input-group">
-            <input class="form-control bg-dark text-light border-secondary" type="search" name="q" placeholder="Search movies...">
-            <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
-          </div>
-        </form>
         <div class="d-flex gap-2">
-          <a href="notifications.html" class="btn btn-cinema-outline position-relative"><i class="bi bi-bell"></i></a>
-          <a href="profile.html" class="btn btn-cinema-outline"><i class="bi bi-person"></i></a>
-          <a href="login.html" class="btn btn-cinema">Log In</a>
+          <a href="signup.html" class="btn btn-cinema-outline position-relative"><i class="bi bi-bell"></i></a>
+          <a href="signup.html" class="btn btn-cinema-outline"><i class="bi bi-person"></i></a>
+          <a href="signup.html" class="btn btn-cinema">Sign Up to unlock full potential 😄</a>
         </div>
       </div>
     </div>
@@ -45,7 +37,7 @@
     <div class="col-md-5">
       <div class="bg-cinema-card p-4 p-md-5">
         <h3 class="fw-bold mb-4 text-center">Welcome Back</h3>
-        <form action="index.html">
+        <form action="browse.html">
           <div class="mb-3">
             <label class="form-label">Email Address</label>
             <input type="email" class="form-control bg-dark text-light border-secondary" placeholder="name@example.com" required>
