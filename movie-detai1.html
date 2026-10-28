@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABSOLUTE CINEMA</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation Header -->
+  <nav class="navbar navbar-expand-lg sticky-top border-bottom border-dark py-3" style="background-color: rgba(10,11,16,0.95); backdrop-filter: blur(10px);">
+    <div class="container">
+      <a class="navbar-brand cinema-brand d-flex align-items-center gap-2" href="index.html">
+        <i class="bi bi-film fs-3"></i> ABSOLUTE CINEMA
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+          <li class="nav-item"><a class="nav-link active fw-bold text-white" href="index.html">Home</a></li>  
+        </ul>
+        <form class="d-flex me-3" action="search.html" method="GET">
+          <div class="input-group">
+            <input class="form-control bg-dark text-light border-secondary" type="search" name="q" placeholder="Search movies...">
+            <button class="btn btn-outline-secondary" type="submit"><i class="bi bi-search"></i></button>
+          </div>
+        </form>
+        <div class="d-flex gap-2">
+          <a href="signup.html" class="btn btn-cinema-outline position-relative"><i class="bi bi-bell"></i></a>
+          <a href="signup.html" class="btn btn-cinema-outline"><i class="bi bi-person"></i></a>
+          <a href="signup.html" class="btn btn-cinema">Sign Up</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <main class="py-4">
+
+<div class="container">
+  <div class="bg-cinema-card p-4 p-md-5 mb-4">
+    <div class="row g-4 align-items-center">
+      <div class="col-md-4">
+        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=600&q=80" class="img-fluid rounded-3 shadow" alt="Movie Poster">
+      </div>
+      <div class="col-md-8">
+        <span class="badge badge-format mb-2">IMAX 3D • DOLBY ATMOS</span>
+        <h1 class="display-5 fw-bold mb-2">AVENGERS: DOOMSDAY</h1>
+        <p class="text-muted mb-3">PG-13 • Action, Sci-Fi, Adventure • 2h 45m • Release: 2026</p>
+        <p class="lead text-light mb-4">When a cosmic collapse threatens reality itself, heroes must unite across dimensions to face Victor von Doom in an unprecedented showdown.</p>
+        <div class="row g-3 mb-4">
+          <div class="col-6 col-sm-3">
+            <small class="text-muted d-block">Rating</small>
+            <span class="fw-bold text-warning"><i class="bi bi-star-fill"></i> 4.9 / 5.0</span>
+          </div>
+          <div class="col-6 col-sm-3">
+            <small class="text-muted d-block">Director</small>
+            <span class="fw-bold">Russo Brothers</span>
+          </div>
+          <div class="col-6 col-sm-3">
+            <small class="text-muted d-block">Ticket Price</small>
+            <span class="fw-bold text-danger">₱350 - ₱650</span>
+          </div>
+        </div>
+        <a href="signup.html" class="btn btn-cinema btn-lg"><i class="bi bi-ticket-perforated me-2"></i>Sign Up to Proceed</a>
+      </div>
+    </div>
+  </div>
+</div>
+  </main>
+  <!-- Footer -->
+  <footer class="border-top border-dark py-4 mt-auto" style="background-color: #07080b;">
+    <div class="container text-center text-muted">
+      <p class="mb-1">&copy; 2026 ABSOLUTE CINEMA. All rights reserved.</p>
+      <small>Experience movies in IMAX 3D, Dolby Atmos & VIP Recliner Seats.</small>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
