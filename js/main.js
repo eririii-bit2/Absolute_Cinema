@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
       format: "IMAX 3D • DOLBY ATMOS",
       rating: "4.9 / 5.0",
       director: "Russo Brothers",
-      price: "₱350 - ₱650",
+      price: "₱350",
       description: "When a cosmic collapse threatens reality itself, heroes must unite across dimensions to face Victor von Doom in an unprecedented showdown."
     },
     {
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', () => {
       format: "2D • DOLBY DIGITAL",
       rating: "4.7 / 5.0",
       director: "Dave Green",
-      price: "₱350",
+      price: "₱500",
       description: "Wile E. Coyote hires a down-on-his-luck attorney to sue the Acme Corporation for its defective products after every attempt to catch the Road Runner backfires."
     },
     {
@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
       format: "2D • JAPANESE AUDIO",
       rating: "4.8 / 5.0",
       director: "Kiyotaka Oshiyama",
-      price: "₱350",
+      price: "₱250",
       description: "An overly confident Fujino and the shut-in Kyomoto are brought together by a shared love for drawing manga in a poignant coming-of-age story."
     },
     {
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
       format: "2D",
       rating: "4.5 / 5.0",
       director: "Director Name",
-      price: "₱350",
+      price: "₱400",
       description: "A heartwarming story following family connections, togetherness, and life-changing moments."
     },
     {
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
       format: "2D",
       rating: "4.4 / 5.0",
       director: "Director Name",
-      price: "₱350",
+      price: "₱120",
       description: "A compelling story highlighting local experiences, traditions, and family relationships."
     }
   ];
