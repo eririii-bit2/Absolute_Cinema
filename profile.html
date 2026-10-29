@@ -33,36 +33,98 @@
         <div class="d-flex gap-2">
           <a href="notifications.html" class="btn btn-cinema-outline position-relative"><i class="bi bi-bell"></i><span class="position-absolute top-0 start-100 translate-middle p-1 bg-danger border border-light rounded-circle"></span></a>
           <a href="profile.html" class="btn btn-cinema-outline"><i class="bi bi-person"></i></a>
-          <a href="login.html" class="btn btn-cinema">Log In</a>
         </div>
       </div>
     </div>
   </nav>
   <main class="py-4">
 
-<div class="container py-3">
-  <div class="row g-4">
-    <div class="col-md-4">
-      <div class="bg-cinema-card p-4 text-center">
-        <i class="bi bi-person-circle fs-1 text-danger"></i>
-        <h5 class="fw-bold mt-2 mb-0">Juan Dela Cruz</h5>
-        <p class="text-muted small">VIP Club Member</p>
-      </div>
-    </div>
-    <div class="col-md-8">
-      <div class="bg-cinema-card p-4">
-        <h5 class="fw-bold border-bottom border-dark pb-2 mb-3">Browsing & Ticket History</h5>
-        <div class="d-flex justify-content-between align-items-center border-bottom border-dark pb-2 mb-2">
-          <div>
-            <p class="mb-0 fw-bold">Avengers: Doomsday</p>
-            <small class="text-muted">Tickets: 2 (B4, B5) • ₱700</small>
+<main class="py-5 flex-grow-1 d-flex align-items-center">
+    <div class="container container-profile">
+
+      <!-- Main Profile Glass Panel -->
+      <div class="glass-panel rounded-4 p-4 p-md-5">
+        
+        <!-- Header Section: Avatar & User Details -->
+        <div class="d-flex flex-column flex-sm-row align-items-center gap-4 border-bottom border-white border-opacity-10 pb-4 mb-4 text-center text-sm-start">
+          
+          <!-- Glowing Avatar -->
+          <div class="avatar-glow rounded-circle p-1 flex-shrink-0">
+            <div class="avatar-inner">
+              JD
+            </div>
           </div>
-          <span class="badge bg-success">Confirmed</span>
+
+          <!-- Member Information -->
+          <div class="flex-grow-1">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-sm-start gap-2 mb-1">
+              <h3 class="fw-bold text-white mb-0 fs-3">JUAN DELA CRUZ</h3>
+              <span class="badge rounded-pill badge-vip px-3 py-1">
+                ABSOLUTE GOLD MEMBER
+              </span>
+            </div>
+            <p class="text-secondary small mb-0">juan.delacruz@cinema.ph • Member since 2023</p>
+          </div>
         </div>
+
+        <!-- Details Grid -->
+        <div class="row g-4">
+          <!-- Personal Information Column -->
+          <div class="col-md-6">
+            <h5 class="fw-bold text-white border-bottom border-white border-opacity-10 pb-2 mb-3 fs-6">Personal Information</h5>
+            
+            <div class="mb-3">
+              <label class="form-label text-secondary small mb-1">Full Name</label>
+              <input type="text" value="Juan Dela Cruz" class="form-control form-control-sm custom-input py-2 px-3">
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-secondary small mb-1">Email Address</label>
+              <input type="email" value="juan.delacruz@cinema.ph" class="form-control form-control-sm custom-input py-2 px-3">
+            </div>
+            <div class="mb-3">
+              <label class="form-label text-secondary small mb-1">Phone Number</label>
+              <input type="text" value="+63 917 890 1234" class="form-control form-control-sm custom-input py-2 px-3">
+            </div>
+          </div>
+
+          <!-- Cinema Preferences Column -->
+          <div class="col-md-6">
+            <h5 class="fw-bold text-white border-bottom border-white border-opacity-10 pb-2 mb-3 fs-6">Cinema Preferences</h5>
+            
+            <div class="mb-3">
+              <label class="form-label text-secondary small mb-1">Favorite Branch</label>
+              <select class="form-select form-select-sm custom-input py-2 px-3">
+                <option selected>Absolute Cinema - SM Fairview</option>
+                <option>Absolute Cinema - SM Megamall</option>
+                <option>Absolute Cinema - SM San Mateo</option>
+                <option>Absolute Cinema - SM North EDSA</option>
+                <option>Absolute Cinema - Robinsons Place Manila</option>
+                <option>Absolute Cinema - Ayala Malls Manila Bay</option>
+                <option>Absolute Cinema - SM City Cebu</option>
+                <option>Absolute Cinema - Ayala Malls Fairview Terraces</option>
+              </select>
+            </div>
+            <div class="mb-4">
+              <label class="form-label text-secondary small mb-1">Preferred Seat Area</label>
+              <select class="form-select form-select-sm custom-input py-2 px-3">
+                <option selected>Center Rows (Row E - F)</option>
+                <option>VIP Recliner Row (Row H)</option>
+              </select>
+            </div>
+
+            <!-- Action Buttons Row -->
+            <div class="d-flex align-items-center justify-content-between pt-2">
+              <button type="button" class="btn btn-brand-red fw-bold">
+                Save Preferences
+              </button>
+            </div>
+          </div>
+          <a href="index.html" class="btn btn-logout">Log Out</a>
+        </div>
+
       </div>
     </div>
-  </div>
-</div>
+  </main>
   </main>
   <!-- Footer -->
   <footer class="border-top border-dark py-4 mt-auto" style="background-color: #07080b;">
