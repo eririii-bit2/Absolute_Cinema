@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<div class="blur-background variant-2">
+<div class="blur-background">
   <div class="blur-rect rect-1"></div>
   <div class="blur-rect rect-2"></div>
   <div class="blur-rect rect-3"></div>
@@ -32,7 +32,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-          <li class="nav-item"><a class="nav-link text-secondary" href="browse.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active fw-bold text-white" href="browse.html">Home</a></li>
           <li class="nav-item"><a class="nav-link text-secondary" href="categories.html">Categories</a></li>
           <li class="nav-item"><a class="nav-link text-secondary" href="location.html">Cinema Location</a></li>
         </ul>
@@ -49,37 +49,93 @@
       </div>
     </div>
   </nav>
- <main class="py-4">
-    <div class="container">
-      <div class="bg-cinema-card p-4 p-md-5 mb-4">
-        <div class="row g-4 align-items-center">
-          <div class="col-md-4">
-            <img id="detail-img" src="" class="img-fluid rounded-3 shadow" alt="Movie Poster">
-          </div>
-          <div class="col-md-8">
-            <span id="detail-format" class="badge badge-format mb-2"></span>
-            <h1 id="detail-title" class="display-5 fw-bold mb-2"></h1>
-            <p id="detail-meta" class="text-muted mb-3"></p>
-            <p id="detail-description" class="lead text-light mb-4"></p>
-            <div class="row g-3 mb-4">
-              <div class="col-6 col-sm-3">
-                <small class="text-muted d-block">Rating</small>
-                <span id="detail-rating" class="fw-bold text-warning"></span>
-              </div>
-              <div class="col-6 col-sm-3">
-                <small class="text-muted d-block">Director</small>
-                <span id="detail-director" class="fw-bold"></span>
-              </div>
-              <div class="col-6 col-sm-3">
-                <small class="text d-block">Ticket Price</small>
-                <span id="detail-price" class="fw-bold text-danger"></span>
-              </div>
-            </div>
-            <a id="location-btn" href="location.html" class="btn btn-cinema btn-lg"><i class="bi bi-geo-alt me-2"></i>Select Location and Time</a>
-          </div>
+  <main class="py-4">
+
+<div class="container">
+  <!-- Hero Featured Banner -->
+  <div class="bg-cinema-card p-4 p-md-5 mb-5 overflow-hidden position-relative" style="background: linear-gradient(90deg, rgba(10,11,16,0.95) 30%, rgba(10,11,16,0.4)), url('images/doomsday_landscape.jpg') center/cover;">
+    <div class="row align-items-center">
+      <div class="col-lg-7">
+        <span class="badge badge-format mb-2 px-3 py-2">NOW SHOWING</span>
+        <h1 class="display-4 fw-bold text-white mb-3">AVENGERS: DOOMSDAY</h1>
+        <p class="lead text-light mb-4">Every kingdom falls. Doomsday rises. Witness the ultimate cinematic spectacle in IMAX 3D and Dolby Atmos.</p>
+        <div class="d-flex gap-3">
+          <a href="select-seats.html" class="btn btn-cinema btn-lg"><i class="bi bi-geo-alt me-2"></i>Select Location</a>
+          <a href="movie-detail.html" class="btn btn-cinema-outline btn-lg"><i class="bi bi-info-circle me-2"></i>Details</a>
         </div>
       </div>
     </div>
+  </div>
+
+  <!-- Now Showing Section -->
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h3 class="fw-bold m-0"><i class="bi bi-play-circle text-danger me-2"></i>Now Showing</h3>
+    <a href="categories.html" class="text-danger text-decoration-none fw-semibold">View All <i class="bi bi-arrow-right"></i></a>
+  </div>
+
+  <div class="row g-4 mb-5">
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="poster-card bg-cinema-card p-2">
+        <a href="movie-detail.html?id=avengers-doomsday"><img src="images/avengersdoomsday.jpg" class="poster-img" alt="Poster"></a>
+        <div class="p-2">
+          <h6 class="fw-bold mb-1 text-truncate">Avengers: Doomsday</h6>
+          <small class="text-muted">Action / Sci-Fi • 2h 45m</small>
+          <a href="movie-detail.html?id=avengers-doomsday" class="btn btn-cinema btn-sm w-100 mt-2">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="poster-card bg-cinema-card p-2">
+        <a href="movie-detail.html?id=coyote-vs-acme"><img src="images/coyotevsacme.jpg" class="poster-img" alt="Poster"></a>
+        <div class="p-2">
+          <h6 class="fw-bold mb-1 text-truncate">Coyote vs.Acme</h6>
+          <small class="text-muted">Animation / Adventure • 1h 43m</small>
+          <a href="movie-detail.html?id=coyote-vs-acme" class="btn btn-cinema btn-sm w-100 mt-2">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="poster-card bg-cinema-card p-2">
+        <a href="movie-detail.html?id=meet-greet-bye"><img src="images/meetgreetbye.jpg" class="poster-img" alt="Poster"></a>
+        <div class="p-2">
+          <h6 class="fw-bold mb-1 text-truncate">Meet, Greet & Bye</h6>
+          <small class="text-muted">Drama / Family • 1h 46m</small>
+          <a href="movie-detail.html?id=meet-greet-bye" class="btn btn-cinema btn-sm w-100 mt-2">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="poster-card bg-cinema-card p-2">
+        <a href="movie-detail.html?id=peaky-blinders"><img src="images/peakyblinders.jpg" class="poster-img" alt="Poster"></a>
+        <div class="p-2">
+          <h6 class="fw-bold mb-1 text-truncate">Peaky Blinders: The Immortal Man</h6>
+          <small class="text-muted">Crime / History • 1h 52m</small>
+          <a href="movie-detail.html?id=peaky-blinders" class="btn btn-cinema btn-sm w-100 mt-2">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="poster-card bg-cinema-card p-2">
+        <a href="movie-detail.html?id=look-back"><img src="images/lookback.jpg" class="poster-img" alt="Poster"></a>
+        <div class="p-2">
+          <h6 class="fw-bold mb-1 text-truncate">Look Back</h6>
+          <small class="text-muted">Animation / Psychological Drama • 58m</small>
+          <a href="movie-detail.html?id=look-back" class="btn btn-cinema btn-sm w-100 mt-2">Book Now</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-6 col-md-4 col-lg-3">
+      <div class="poster-card bg-cinema-card p-2">
+        <a href="movie-detail.html?id=2-valid-ids"><img src="images/2validids.jpg" class="poster-img" alt="Poster"></a>
+        <div class="p-2">
+          <h6 class="fw-bold mb-1 text-truncate">2 Valid IDs</h6>
+          <small class="text-muted">Filipino / Drama • 1h 30m</small>
+          <a href="movie-detail.html?id=2-valid-ids" class="btn btn-cinema btn-sm w-100 mt-2">Book Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
   </main>
   <!-- Footer -->
   <footer class="border-top border-dark py-4 mt-auto" style="background-color: #07080b;">
