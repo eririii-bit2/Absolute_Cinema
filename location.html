@@ -12,7 +12,7 @@
   <!-- Navigation Header -->
   <nav class="navbar navbar-expand-lg sticky-top border-bottom border-dark py-3" style="background-color: rgba(10,11,16,0.95); backdrop-filter: blur(10px);">
     <div class="container">
-      <a class="navbar-brand cinema-brand d-flex align-items-center gap-2" href="index.html">
+      <a class="navbar-brand cinema-brand d-flex align-items-center gap-2" href="browse.html">
         <i class="bi bi-film fs-3"></i> ABSOLUTE CINEMA
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navContent">
@@ -20,9 +20,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
-          <li class="nav-item"><a class="nav-link text-secondary" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" href="browse.html">Home</a></li>
           <li class="nav-item"><a class="nav-link text-secondary" href="categories.html">Categories</a></li>
-          <li class="nav-item"><a class="nav-link active fw-bold text-white" href="location.html">Cinema Location</a></li>
+          <li class="nav-item"><a class="nav-link text-secondary" href="location.html">Cinema Location</a></li>
         </ul>
         <form class="d-flex me-3" action="search.html" method="GET">
           <div class="input-group">
@@ -33,51 +33,34 @@
         <div class="d-flex gap-2">
           <a href="notifications.html" class="btn btn-cinema-outline position-relative"><i class="bi bi-bell"></i></a>
           <a href="profile.html" class="btn btn-cinema-outline"><i class="bi bi-person"></i></a>
-          <a href="login.html" class="btn btn-cinema">Log In</a>
         </div>
       </div>
     </div>
   </nav>
   <main class="py-4">
 
-<div class="container py-3">
-  <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Absolute Cinema - Robinsons Manila</h3>
-  <div class="bg-cinema-card p-4">
-    <h5>Address & Contact</h5>
-    <p class="text-muted">Pedro Gil St. cor. Adriatico St., Ermita, Manila, Metro Manila</p>
-    <p class="text-muted">Hotline: (02) 8310-3333 / (02) 8288-7678 | Email: customer.care@robinsonsland.com</p>
-  </div>
-</div>
-<div class="container py-3">
-  <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Absolute Cinema - Gateway Mall</h3>
-  <div class="bg-cinema-card p-4">
-    <h5>Address & Contact</h5>
-    <p class="text-muted">General Malvar Ave. / Gen. Roxas Ave., Araneta City, Cubao, Quezon City, Metro Manila</p>
-    <p class="text-muted">Hotline: (02) 8911-1555 / (02) 8911-3101 | Email: info@aranetacity.com</p>
-  </div>
-</div>
-<div class="container py-3">
-  <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Absolute Cinema - SM Fairview</h3>
-  <div class="bg-cinema-card p-4">
-    <h5>Address & Contact</h5>
-    <p class="text-muted">Quirino Highway cor. Regalado Ave., Novaliches, Quezon City, Metro Manila</p>
-    <p class="text-muted">Hotline: (02) 8876-1111 / 0917-876-1111 (Globe) / 0908-876-1111 (Smart) | Email: customercare@smsupermalls.com</p>
-  </div>
-</div>
-<div class="container py-3">
-  <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Absolute Cinema - SM Manila</h3>
-  <div class="bg-cinema-card p-4">
-    <h5>Address & Contact</h5>
-    <p class="text-muted">San Marcelino St. cor. Natividad Almeda-Lopez St. (Concepcion / Antonio Villegas St.), Ermita, Manila, Metro Manila</p>
-    <p class="text-muted">Hotline: (02) 8876-1111 (SM Supermalls Hotline) / (02) 8523-6855 (Mall Admin/Store) | Email: customercare@smsupermalls.com</p>
-  </div>
-</div>
-<div class="container py-3">
-  <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Absolute Cinema - SM San Mateo</h3>
-  <div class="bg-cinema-card p-4">
-    <h5>Address & Contact</h5>
-    <p class="text-muted">Gen. A. Luna Ave., Brgy. Ampid 1, San Mateo, Rizal</p>
-    <p class="text-muted">Hotline: (02) 8876-1111 (SM Supermalls Hotline) | Email: customercare@smsupermalls.com</p>
+<div class="container py-4 text-center">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="bg-cinema-card p-4 p-md-5">
+        <div class="text-danger fs-1 mb-2"><i class="bi bi-check-circle-fill"></i></div>
+        <h3 class="fw-bold mb-2">You're In! We've Saved Your Seat.</h3>
+        <p class="text-muted mb-4">Your digital ticket pass has been issued.</p>
+        
+        <div class="bg-dark p-3 rounded-3 text-start mb-4 border border-secondary">
+          <h5 class="fw-bold text-danger mb-1">Avengers: Doomsday</h5>
+          <p class="mb-1 text-light">Seats: B4, B5 (Cinema 1)</p>
+          <p class="mb-1 text-muted">Time: Today @ 7:30 PM</p>
+          <p class="mb-0 text-muted">Order ID: #ABS-889021</p>
+        </div>
+
+        <div class="mb-4">
+          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ABSOLUTE-CINEMA-B4-B5" class="bg-white p-2 rounded shadow" alt="Ticket QR">
+        </div>
+
+        <a href="index.html" class="btn btn-cinema w-100">Return to Home</a>
+      </div>
+    </div>
   </div>
 </div>
   </main>
