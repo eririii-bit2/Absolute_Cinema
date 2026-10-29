@@ -8,6 +8,140 @@
   --text-muted: #8c96ab;
 }
 
+/* ==========================================
+   BASE AMBIENT LAYER BLUR CONTAINER
+   ========================================== */
+
+.blur-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 1480px;
+  overflow: hidden;
+  z-index: -1;
+  pointer-events: none;
+  background-color: #0a0b10;
+}
+
+.blur-rect {
+  position: absolute;
+  pointer-events: none;
+}
+
+/* ==========================================
+   DEFAULT / VARIANT 1 (FIGMA CO-ORDINATES)
+   ========================================== */
+
+.blur-background .rect-1 {
+  left: 0%; right: 67.81%; top: 1.82%; bottom: 54.53%;
+  background: #3D0B05; filter: blur(99.5px);
+}
+.blur-background .rect-2 {
+  left: 75.13%; right: 0%; top: 27.77%; bottom: 0%;
+  background: #3D0B05; filter: blur(99.5px);
+}
+.blur-background .rect-3 {
+  left: 23.65%; right: 56.57%; top: 39.53%; bottom: 40.34%;
+  background: rgba(215, 198, 178, 0.38); filter: blur(118.25px);
+}
+.blur-background .rect-4 {
+  left: 47.55%; right: 32.67%; top: 0%; bottom: 79.86%;
+  background: rgba(215, 198, 178, 0.38); filter: blur(118.25px);
+}
+.blur-background .rect-5 {
+  left: 59.04%; right: 17.01%; top: 17.57%; bottom: 58.04%;
+  background: #000320; filter: blur(117.25px);
+}
+.blur-background .rect-6 {
+  left: 12.22%; right: 63.84%; top: 47.43%; bottom: 28.18%;
+  background: #000320; filter: blur(117.25px);
+}
+.blur-background .rect-7 {
+  left: 61.12%; right: 19.1%; top: 59.66%; bottom: 20.2%;
+  background: rgba(215, 198, 178, 0.38); filter: blur(118.25px);
+}
+.blur-background .rect-8 {
+  left: 31.46%; right: 36.35%; top: 47.43%; bottom: 8.92%;
+  background: rgba(61, 11, 5, 0.56); filter: blur(99.5px);
+}
+
+/* ==========================================
+   VARIANT 2 (FIGMA CO-ORDINATES)
+   ========================================== */
+
+.blur-background.variant-2 .rect-1 {
+  left: 1.86%; right: 65.96%; top: 66.59%; bottom: -10.24%;
+  background: #3D0B05; filter: blur(99.5px); transform: rotate(-89.85deg);
+}
+.blur-background.variant-2 .rect-2 {
+  left: 28.48%; right: 46.65%; top: 0.07%; bottom: 27.7%;
+  background: #3D0B05; filter: blur(99.5px); transform: rotate(-89.85deg);
+}
+.blur-background.variant-2 .rect-3 {
+  left: 40.32%; right: 39.91%; top: 55.65%; bottom: 24.22%;
+  background: rgba(215, 198, 178, 0.38); filter: blur(118.25px); transform: rotate(-89.85deg);
+}
+.blur-background.variant-2 .rect-4 {
+  left: 0.12%; right: 80.1%; top: 32.08%; bottom: 47.79%;
+  background: rgba(215, 198, 178, 0.38); filter: blur(118.25px); transform: rotate(-89.85deg);
+}
+.blur-background.variant-2 .rect-5 {
+  left: 18.05%; right: 58.01%; top: 16.75%; bottom: 58.86%;
+  background: #000320; filter: blur(117.25px); transform: rotate(-89.85deg);
+}
+.blur-background.variant-2 .rect-6 {
+  left: 48.34%; right: 27.72%; top: 62.81%; bottom: 12.8%;
+  background: #000320; filter: blur(117.25px); transform: rotate(-89.85deg);
+}
+.blur-background.variant-2 .rect-7 {
+  left: 60.92%; right: 19.3%; top: 18.91%; bottom: 60.96%;
+  background: rgba(215, 198, 178, 0.38); filter: blur(118.25px); transform: rotate(-89.85deg);
+}
+.blur-background.variant-2 .rect-8 {
+  left: 48.39%; right: 19.43%; top: 35.82%; bottom: 20.53%;
+  background: rgba(61, 11, 5, 0.56); filter: blur(99.5px); transform: rotate(-89.85deg);
+}
+
+/* ==========================================
+   VARIANT 3 (FIGMA CO-ORDINATES)
+   ========================================== */
+
+.blur-background.variant-3 .rect-1 {
+  left: 27.37%; right: 40.45%; top: -1.66%; bottom: 58.01%;
+  background: #3D0B05; filter: blur(99.5px); transform: none;
+}
+.blur-background.variant-3 .rect-2 {
+  left: 61.11%; right: 14.04%; top: 65.91%; bottom: -9.97%;
+  background: #3D0B05; filter: blur(99.5px); transform: none;
+}
+.blur-background.variant-3 .rect-3 {
+  left: 10.33%; right: 69.89%; top: 37.4%; bottom: 42.47%;
+  background: rgba(215, 198, 178, 0.53); filter: blur(118.25px); transform: none;
+}
+.blur-background.variant-3 .rect-4 {
+  left: 55.35%; right: 24.87%; top: 0.03%; bottom: 79.83%;
+  background: rgba(215, 198, 178, 0.38); filter: blur(118.25px); transform: none;
+}
+.blur-background.variant-3 .rect-5 {
+  left: 88.01%; right: -11.95%; top: 3.41%; bottom: 72.2%;
+  background: #000320; filter: blur(117.25px); transform: none;
+}
+.blur-background.variant-3 .rect-6 {
+  left: -3.71%; right: 79.77%; top: 15.64%; bottom: 59.97%;
+  background: #000320; filter: blur(117.25px); transform: none;
+}
+.blur-background.variant-3 .rect-7 {
+  left: 47.26%; right: 32.96%; top: 79.9%; bottom: -0.03%;
+  background: rgba(215, 198, 178, 0.38); filter: blur(118.25px); transform: none;
+}
+.blur-background.variant-3 .rect-8 {
+  left: 31.46%; right: 23.94%; top: 47.47%; bottom: 8.89%;
+  background: rgba(61, 11, 5, 0.56); filter: blur(99.5px); transform: none;
+}
+
+
 body {
   background-color: var(--bg-dark);
   color: #ffffff;
@@ -182,11 +316,11 @@ main {
 }
 
 .screen-indicator {
-  height: 8px;
-  background: linear-gradient(to bottom, var(--primary-red), transparent);
+  height: 18px;
+  background: linear-gradient(180deg, #ffffff 0%, rgba(229, 9, 20, 0.8) 50%, rgba(229, 9, 20, 0) 100%);
   border-radius: 50% 50% 0 0 / 100% 100% 0 0;
-  box-shadow: 0 -5px 15px rgba(229, 9, 20, 0.6);
-  margin-bottom: 2rem;
+  box-shadow: 0 15px 30px rgba(229, 9, 20, 0.5);
+  transform: rotateX(-10deg);
 }
 
 .seat {
@@ -204,7 +338,7 @@ main {
 }
 
 .seat.available:hover {
-  background-color: #3b435d;
+  background-color: #5d3b3d;
 }
 
 .seat.selected {
