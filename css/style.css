@@ -141,6 +141,30 @@
   background: rgba(61, 11, 5, 0.56); filter: blur(99.5px); transform: none;
 }
 
+// Location CSS
+.cinema-region-card {
+  background-color: #0b0d14;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.cinema-region-toggle {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  text-align: left;
+}
+
+.branch-details-content {
+  background-color: #12151f;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.btn-details-toggle {
+  font-size: 0.85rem;
+}
+
 
 body {
   background-color: var(--bg-dark);
