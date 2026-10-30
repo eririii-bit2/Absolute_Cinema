@@ -50,49 +50,226 @@
       </div>
     </div>
   </nav>
-  <main class="py-4">
+  
 
-<div class="container py-3">
-  <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Absolute Cinema - Robinsons Manila</h3>
-  <div class="bg-cinema-card p-4">
-    <h5>Address & Contact</h5>
-    <p class="text-muted">Pedro Gil St. cor. Adriatico St., Ermita, Manila, Metro Manila</p>
-    <p class="text-muted">Hotline: (02) 8310-3333 / (02) 8288-7678 | Email: customer.care@robinsonsland.com</p>
+<main class="py-4">
+  <div class="container py-3">
+    <header class="mb-4">
+      <h1 class="fw-bold mb-2"><i class="bi bi-geo-alt-fill text-danger me-2"></i>LUZON</h1>
+      <p class="text-muted mb-0">Browse cinema locations by region.</p>
+    </header>
+
+    <div class="cinema-region-card mb-3">
+      <!-- 1. NCR Region Dropdown -->
+      <button class="cinema-region-toggle w-100 d-flex justify-content-between align-items-center p-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNCR" aria-expanded="true" aria-controls="collapseNCR">
+        <span class="fw-bold text-uppercase fs-5">National Capital Region (NCR) – Metro Manila</span>
+        <i class="bi bi-chevron-down toggle-icon fs-4"></i>
+      </button>
+
+      <div id="collapseNCR" class="collapse show">
+        <div class="cinema-branch-list p-3 border-top border-secondary-subtle">
+
+          <!-- SM City San Lazaro Cinema -->
+          <div class="branch-item border-bottom border-secondary-subtle pb-3 mb-3">
+            <h5 class="fw-bold mb-1">SM City San Lazaro Cinema</h5>
+            <button class="btn btn-link text-secondary p-0 text-decoration-none btn-details-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#details-san-lazaro" aria-expanded="true">
+              details <i class="bi bi-chevron-down small"></i>
+            </button>
+            <div id="details-san-lazaro" class="collapse show branch-details-content mt-2 p-3 rounded">
+              <h6 class="fw-bold mb-1">Address & Contact</h6>
+              <p class="mb-1 text-light small">3rd Floor, Main Building, SM City San Lazaro (Felix Huertas cor. A.H. Lacson Sts., Sta. Cruz, Manila)</p>
+              <p class="mb-0 text-muted small"><i class="bi bi-telephone me-1"></i> Hotline: (02) 8711-0000 | Email: customercare@absolutecinema.com</p>
+            </div>
+          </div>
+
+          <!-- SM City Sta. Mesa Cinema -->
+          <div class="branch-item border-bottom border-secondary-subtle pb-3 mb-3">
+            <h5 class="fw-bold mb-1">SM City Sta. Mesa Cinema</h5>
+            <button class="btn btn-link text-secondary p-0 text-decoration-none btn-details-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#details-sta-mesa" aria-expanded="true">
+              details <i class="bi bi-chevron-down small"></i>
+            </button>
+            <div id="details-sta-mesa" class="collapse show branch-details-content mt-2 p-3 rounded">
+              <h6 class="fw-bold mb-1">Address & Contact</h6>
+              <p class="mb-1 text-light small">4th Floor, SM City Sta. Mesa (R. Magsaysay cor. G. Araneta Ave., Doña Imelda, Quezon City / Manila border)</p>
+              <p class="mb-0 text-muted small"><i class="bi bi-telephone me-1"></i> Hotline: (02) 8716-1234 | Email: customercare@absolutecinema.com</p>
+            </div>
+          </div>
+
+          <!-- SM Fairview -->
+          <div class="branch-item border-bottom border-secondary-subtle pb-3 mb-3">
+            <h5 class="fw-bold mb-1">SM City Fairview Cinema</h5>
+            <button class="btn btn-link text-secondary p-0 text-decoration-none btn-details-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#details-sm-fairview" aria-expanded="false">
+              details <i class="bi bi-chevron-down small"></i>
+            </button>
+            <div id="details-sm-fairview" class="collapse branch-details-content mt-2 p-3 rounded">
+              <h6 class="fw-bold mb-1">Address & Contact</h6>
+              <p class="mb-1 text-light small">3rd Floor, Main Building, SM City Fairview (Quirino Highway cor. Regalado Ave., Greater Lagro, Novaliches, Quezon City)</p>
+              <p class="mb-0 text-muted small"><i class="bi bi-telephone me-1"></i> Hotline: (02) 8939-0123 | Email: customercare@absolutecinema.com</p>
+            </div>
+          </div>
+
+          <!-- SM Manila -->
+          <div class="branch-item border-bottom border-secondary-subtle pb-3 mb-3">
+            <h5 class="fw-bold mb-1">SM City Manila Cinema</h5>
+            <button class="btn btn-link text-secondary p-0 text-decoration-none btn-details-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#details-sm-manila" aria-expanded="false">
+              details <i class="bi bi-chevron-down small"></i>
+            </button>
+            <div id="details-sm-manila" class="collapse branch-details-content mt-2 p-3 rounded">
+              <h6 class="fw-bold mb-1">Address & Contact</h6>
+              <p class="mb-1 text-light small">4th Floor, SM City Manila (Concepcion cor. Arroceros and San Marcelino Sts., Ermita, Manila)</p>
+              <p class="mb-0 text-muted small"><i class="bi bi-telephone me-1"></i> Hotline: (02) 8523-7000 | Email: customercare@absolutecinema.com</p>
+            </div>
+          </div>
+
+          <!-- Ayala Circuit -->
+          <div class="branch-item border-bottom border-secondary-subtle pb-3 mb-3">
+            <h5 class="fw-bold mb-1">Ayala Malls Circuit Cinema</h5>
+            <button class="btn btn-link text-secondary p-0 text-decoration-none btn-details-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#details-ayala-circuit" aria-expanded="false">
+              details <i class="bi bi-chevron-down small"></i>
+            </button>
+            <div id="details-ayala-circuit" class="collapse branch-details-content mt-2 p-3 rounded">
+              <h6 class="fw-bold mb-1">Address & Contact</h6>
+              <p class="mb-1 text-light small">Level 4, Ayala Malls Circuit (Circuit Makati, Brgy. Carmona, Makati City)</p>
+              <p class="mb-0 text-muted small"><i class="bi bi-telephone me-1"></i> Hotline: (02) 7759-8000 | Email: customercare@absolutecinema.com</p>
+            </div>
+          </div>
+
+          <!-- MOA IMAX -->
+          <div class="branch-item border-bottom border-secondary-subtle pb-3 mb-3">
+            <h5 class="fw-bold mb-1">SM Mall of Asia IMAX Cinema</h5>
+            <button class="btn btn-link text-secondary p-0 text-decoration-none btn-details-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#details-moa-imax" aria-expanded="false">
+              details <i class="bi bi-chevron-down small"></i>
+            </button>
+            <div id="details-moa-imax" class="collapse branch-details-content mt-2 p-3 rounded">
+              <h6 class="fw-bold mb-1">Address & Contact</h6>
+              <p class="mb-1 text-light small">2nd Floor, Entertainment Mall, SM Mall of Asia (SM Central Business Park, Bay City, Pasay City)</p>
+              <p class="mb-0 text-muted small"><i class="bi bi-telephone me-1"></i> Hotline: (02) 8556-0123 | Email: customercare@absolutecinema.com</p>
+            </div>
+          </div>
+
+          <!-- Ayala Feliz -->
+          <div class="branch-item border-bottom border-secondary-subtle pb-3 mb-3">
+            <h5 class="fw-bold mb-1">Ayala Malls Feliz Cinema</h5>
+            <button class="btn btn-link text-secondary p-0 text-decoration-none btn-details-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#details-ayala-feliz" aria-expanded="false">
+              details <i class="bi bi-chevron-down small"></i>
+            </button>
+            <div id="details-ayala-feliz" class="collapse branch-details-content mt-2 p-3 rounded">
+              <h6 class="fw-bold mb-1">Address & Contact</h6>
+              <p class="mb-1 text-light small">Level 5, Ayala Malls Feliz (Marcos Highway cor. J.P. Rizal St., Brgy. Dela Paz, Pasig City)</p>
+              <p class="mb-0 text-muted small"><i class="bi bi-telephone me-1"></i> Hotline: (02) 7901-5000 | Email: customercare@absolutecinema.com</p>
+            </div>
+          </div>
+
+          <!-- Ayala Manila Bay -->
+          <div class="branch-item pb-1">
+            <h5 class="fw-bold mb-1">Ayala Malls Manila Bay Cinema</h5>
+            <button class="btn btn-link text-secondary p-0 text-decoration-none btn-details-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#details-ayala-manila-bay" aria-expanded="false">
+              details <i class="bi bi-chevron-down small"></i>
+            </button>
+            <div id="details-ayala-manila-bay" class="collapse branch-details-content mt-2 p-3 rounded">
+              <h6 class="fw-bold mb-1">Address & Contact</h6>
+              <p class="mb-1 text-light small">Level 4, Ayala Malls Manila Bay (Macapagal Blvd. cor. Aseana Ave., Parañaque City)</p>
+              <p class="mb-0 text-muted small"><i class="bi bi-telephone me-1"></i> Hotline: (02) 7795-7000 | Email: customercare@absolutecinema.com</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. CAR -->
+    <div class="cinema-region-card mb-3">
+      <button class="cinema-region-toggle w-100 d-flex justify-content-between align-items-center p-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCAR" aria-expanded="false" aria-controls="collapseCAR">
+        <span class="fw-bold text-uppercase fs-5">Cordillera Administrative Region (CAR)</span>
+        <i class="bi bi-chevron-down toggle-icon fs-4"></i>
+      </button>
+      <div id="collapseCAR" class="collapse">
+        <div class="p-3 text-muted border-top border-secondary-subtle">
+          No active cinema branches available in this region.
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. Region I -->
+    <div class="cinema-region-card mb-3">
+      <button class="cinema-region-toggle w-100 d-flex justify-content-between align-items-center p-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRegion1" aria-expanded="false" aria-controls="collapseRegion1">
+        <span class="fw-bold text-uppercase fs-5">Region I – Ilocos Region</span>
+        <i class="bi bi-chevron-down toggle-icon fs-4"></i>
+      </button>
+      <div id="collapseRegion1" class="collapse">
+        <div class="p-3 text-muted border-top border-secondary-subtle">
+          No active cinema branches available in this region.
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. Region II -->
+    <div class="cinema-region-card mb-3">
+      <button class="cinema-region-toggle w-100 d-flex justify-content-between align-items-center p-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRegion2" aria-expanded="false" aria-controls="collapseRegion2">
+        <span class="fw-bold text-uppercase fs-5">Region II – Cagayan Valley</span>
+        <i class="bi bi-chevron-down toggle-icon fs-4"></i>
+      </button>
+      <div id="collapseRegion2" class="collapse">
+        <div class="p-3 text-muted border-top border-secondary-subtle">
+          No active cinema branches available in this region.
+        </div>
+      </div>
+    </div>
+
+    <!-- 5. Region III -->
+    <div class="cinema-region-card mb-3">
+      <button class="cinema-region-toggle w-100 d-flex justify-content-between align-items-center p-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRegion3" aria-expanded="false" aria-controls="collapseRegion3">
+        <span class="fw-bold text-uppercase fs-5">Region III – Central Luzon</span>
+        <i class="bi bi-chevron-down toggle-icon fs-4"></i>
+      </button>
+      <div id="collapseRegion3" class="collapse">
+        <div class="p-3 text-muted border-top border-secondary-subtle">
+          No active cinema branches available in this region.
+        </div>
+      </div>
+    </div>
+
+    <!-- 6. Region IV-A -->
+    <div class="cinema-region-card mb-3">
+      <button class="cinema-region-toggle w-100 d-flex justify-content-between align-items-center p-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCalabarzon" aria-expanded="false" aria-controls="collapseCalabarzon">
+        <span class="fw-bold text-uppercase fs-5">Region IV‑A – CALABARZON</span>
+        <i class="bi bi-chevron-down toggle-icon fs-4"></i>
+      </button>
+      <div id="collapseCalabarzon" class="collapse">
+        <div class="p-3 text-muted border-top border-secondary-subtle">
+          No active cinema branches available in this region.
+        </div>
+      </div>
+    </div>
+
+    <!-- 7. MIMAROPA -->
+    <div class="cinema-region-card mb-3">
+      <button class="cinema-region-toggle w-100 d-flex justify-content-between align-items-center p-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMimaropa" aria-expanded="false" aria-controls="collapseMimaropa">
+        <span class="fw-bold text-uppercase fs-5">MIMAROPA Region (Region IV‑B)</span>
+        <i class="bi bi-chevron-down toggle-icon fs-4"></i>
+      </button>
+      <div id="collapseMimaropa" class="collapse">
+        <div class="p-3 text-muted border-top border-secondary-subtle">
+          No active cinema branches available in this region.
+        </div>
+      </div>
+    </div>
+
+    <!-- 8. Region V -->
+    <div class="cinema-region-card mb-3">
+      <button class="cinema-region-toggle w-100 d-flex justify-content-between align-items-center p-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseRegion5" aria-expanded="false" aria-controls="collapseRegion5">
+        <span class="fw-bold text-uppercase fs-5">Region V – Bicol Region</span>
+        <i class="bi bi-chevron-down toggle-icon fs-4"></i>
+      </button>
+      <div id="collapseRegion5" class="collapse">
+        <div class="p-3 text-muted border-top border-secondary-subtle">
+          No active cinema branches available in this region.
+        </div>
+      </div>
+    </div>
+
   </div>
-</div>
-<div class="container py-3">
-  <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Absolute Cinema - Gateway Mall</h3>
-  <div class="bg-cinema-card p-4">
-    <h5>Address & Contact</h5>
-    <p class="text-muted">General Malvar Ave. / Gen. Roxas Ave., Araneta City, Cubao, Quezon City, Metro Manila</p>
-    <p class="text-muted">Hotline: (02) 8911-1555 / (02) 8911-3101 | Email: info@aranetacity.com</p>
-  </div>
-</div>
-<div class="container py-3">
-  <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Absolute Cinema - SM Fairview</h3>
-  <div class="bg-cinema-card p-4">
-    <h5>Address & Contact</h5>
-    <p class="text-muted">Quirino Highway cor. Regalado Ave., Novaliches, Quezon City, Metro Manila</p>
-    <p class="text-muted">Hotline: (02) 8876-1111 / 0917-876-1111 (Globe) / 0908-876-1111 (Smart) | Email: customercare@smsupermalls.com</p>
-  </div>
-</div>
-<div class="container py-3">
-  <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Absolute Cinema - SM Manila</h3>
-  <div class="bg-cinema-card p-4">
-    <h5>Address & Contact</h5>
-    <p class="text-muted">San Marcelino St. cor. Natividad Almeda-Lopez St. (Concepcion / Antonio Villegas St.), Ermita, Manila, Metro Manila</p>
-    <p class="text-muted">Hotline: (02) 8876-1111 (SM Supermalls Hotline) / (02) 8523-6855 (Mall Admin/Store) | Email: customercare@smsupermalls.com</p>
-  </div>
-</div>
-<div class="container py-3">
-  <h3 class="fw-bold mb-4"><i class="bi bi-geo-alt-fill text-danger me-2"></i>Absolute Cinema - SM San Mateo</h3>
-  <div class="bg-cinema-card p-4">
-    <h5>Address & Contact</h5>
-    <p class="text-muted">Gen. A. Luna Ave., Brgy. Ampid 1, San Mateo, Rizal</p>
-    <p class="text-muted">Hotline: (02) 8876-1111 (SM Supermalls Hotline) | Email: customercare@smsupermalls.com</p>
-  </div>
-</div>
-  </main>
+</main>
   <!-- Footer -->
   <footer class="border-top border-dark py-4 mt-auto" style="background-color: #07080b;">
     <div class="container text-center text-muted">
