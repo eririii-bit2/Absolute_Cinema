@@ -49,14 +49,12 @@
       </div>
     </div>
   </nav>
-
-<main class="pl-4">
-    <div class="p-18"><a href="showtime.html" class="link-light"><i class="bi bi-arrow-left fs-1"></i></a></div>
-</main>
-  
   <main class="p-5">
-            <!-- Cinema Branch Selector -->        
-                <label class="d-block text-xs font-semibold text-muted uppercase text-center mb-2">Select Cinema Location</label>
+    
+    <div><a href="browse.html"><i class="bi bi-arrow-left"></i></a></div>
+
+    <!-- Cinema Branch Selector -->              
+    <label class="d-block text-xs font-semibold text-muted uppercase text-center mb-2">Select Cinema Location</label>
     
                 <select id="showtime-location-select" onchange="updateShowtimes()" class="w-full bg-brand-card border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-red text-sm">
                     <option value="Noir Southbank">Noir Southbank - Grand Flagship</option>
@@ -64,8 +62,7 @@
                     <option value="City Center IMAX">City Center IMAX Dome</option>
                 </select>
 
-            <!-- Interactive Horizontal Date Picker Strip -->
-     
+            <!-- Interactive Horizontal Date Picker Strip -->     
             <div class="space-y-3">
                 <span class="d-block text-xs font-semibold text-muted uppercase text-center">Select Date</span>
             
@@ -74,12 +71,11 @@
                 </div> 
                </div>
 
-            <!-- Showtime Slots Grid -->
-    
+            <!-- Showtime Slots Grid -->    
             <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-8 max-w-4xl mx-auto">
                 <div class=" justify-between border-b border-white/10 pb-4">
                   
-                  <!-- IMAX 3D Experience Slots -->
+            <!-- IMAX 3D Experience Slots -->
             <div class="m-2">
             <h3 id="showtime-movie-title" class="font-display text-2xl text-white tracking-wider">AVENGERS: DOOMSDAY</h3>
             <p id="showtime-cinema-name" class="text-xs text-brand-textMuted">Noir Southbank • Screen 1 curved IMAX</p>
