@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-
+    
   // --- 1. SEAT SELECTION LOGIC ---
   const seats = document.querySelectorAll('.seat.available');
   const countEl = document.getElementById('selected-count');
@@ -165,3 +165,74 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    renderDateStrip();
+});
+
+const bookingState = {
+    date: 'Mon, Oct 26',
+    location: 'Noir Southbank'
+};
+
+function renderDateStrip() {
+    const strip = document.getElementById('date-picker-strip');
+
+    if (!strip) return;
+
+    const dates = [
+        { day: 'MON', num: '26', full: 'Mon, Oct 26', active: true },
+        { day: 'TUE', num: '27', full: 'Tue, Oct 27', active: false },
+        { day: 'WED', num: '28', full: 'Wed, Oct 28', active: false },
+        { day: 'THU', num: '29', full: 'Thu, Oct 29', active: false },
+        { day: 'FRI', num: '30', full: 'Fri, Oct 30', active: false },
+        { day: 'SAT', num: '31', full: 'Sat, Oct 31', active: false }
+    ];
+
+    strip.innerHTML = dates.map(d => `
+        <button
+            onclick="setDate('${d.full}', this)"
+            class="date-btn flex-shrink-0 w-16 h-20 rounded-2xl
+            ${d.active
+                ? 'bg-brand-red text-white shadow-glow-red'
+                : 'bg-white/5 text-brand-textMuted border border-white/10 hover:text-white'}
+            flex flex-col items-center justify-center transition">
+
+            <span class="text-[10px] font-bold uppercase">${d.day}</span>
+            <span class="font-display text-2xl font-bold">${d.num}</span>
+        </button>
+    `).join('');
+}
+
+function setDate(dateStr, btn) {
+    bookingState.date = dateStr;
+
+    document.querySelectorAll('.date-btn').forEach(b => {
+        b.classList.remove(
+            'bg-brand-red',
+            'text-white',
+            'shadow-glow-red'
+        );
+
+        b.classList.add(
+            'bg-white/5',
+            'text-brand-textMuted'
+        );
+    });
+
+    btn.classList.add(
+        'bg-brand-red',
+        'text-white',
+        'shadow-glow-red'
+    );
+
+    btn.classList.remove(
+        'bg-white/5',
+        'text-brand-textMuted'
+    );
+
+    console.log('Selected date:', bookingState.date);
+
+    // Refresh showtimes for selected date
+    updateShowtimes();
+}
