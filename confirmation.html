@@ -60,14 +60,15 @@
         <p class="text-muted mb-4">Your digital ticket pass has been issued.</p>
         
         <div class="bg-dark p-3 rounded-3 text-start mb-4 border border-secondary">
-          <h5 class="fw-bold text-danger mb-1">Avengers: Doomsday</h5>
-          <p class="mb-1 text-light">Seats: B4, B5 (Cinema 1)</p>
-          <p class="mb-1 text-muted">Time: Today @ 7:30 PM</p>
-          <p class="mb-0 text-muted">Order ID: #ABS-889021</p>
+          <h5 id="confirm-movie-title" class="fw-bold text-danger mb-1">Avengers: Doomsday</h5>
+          <p id="confirm-seats" class="mb-1 text-light">Seats: B4, B5 (Cinema 1)</p>
+          <p id="confirm-time" class="mb-1 text-muted">Time: Today @ 7:30 PM</p>
+          <p id="confirm-total" class="mb-1 text-muted">Total: ₱0</p>
+          <p id="confirm-order-id" class="mb-0 text-muted">Order ID: #ABS-889021</p>
         </div>
 
         <div class="mb-4">
-          <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ABSOLUTE-CINEMA-B4-B5" class="bg-white p-2 rounded shadow" alt="Ticket QR">
+          <img id="confirm-qr-code" src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=ABSOLUTE-CINEMA" class="bg-white p-2 rounded shadow" alt="Ticket QR">
         </div>
 
         <a href="browse.html" class="btn btn-cinema w-100">Return to Home</a>
