@@ -49,12 +49,15 @@
       </div>
     </div>
   </nav>
+  
   <main class="p-5">
     
-    <div><a href="browse.html"><i class="bi bi-arrow-left"></i></a></div>
+    <div><a href="browse.html" class="link-light"><i class="bi bi-arrow-left fs-1"></i></a></div>
 
-    <!-- Cinema Branch Selector -->              
-    <label class="d-block text-xs font-semibold text-muted uppercase text-center mb-2">Select Cinema Location</label>
+            <!-- Cinema Branch Selector -->
+  
+            
+                <label class="d-block text-xs font-semibold text-muted uppercase text-center mb-2">Select Cinema Location</label>
     
                 <select id="showtime-location-select" onchange="updateShowtimes()" class="w-full bg-brand-card border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-brand-red text-sm">
                     <option value="Noir Southbank">Noir Southbank - Grand Flagship</option>
@@ -62,16 +65,16 @@
                     <option value="City Center IMAX">City Center IMAX Dome</option>
                 </select>
 
-            <!-- Interactive Horizontal Date Picker Strip -->     
+            <!-- Interactive Horizontal Date Picker Strip -->
             <div class="space-y-3">
                 <span class="d-block text-xs font-semibold text-muted uppercase text-center">Select Date</span>
             
-              <div id="date-picker-strip" class="flex items-center justify-center gap-3 overflow-x-auto no-scrollbar py-2">
-                    <!-- Interactive dates injected via JS -->
+              <div id="date-picker-strip" class="d-flex items-center justify-center gap-3 overflow-x-auto no-scrollbar py-2">
+                          <!-- Interactive dates injected via JS -->
                 </div> 
                </div>
 
-            <!-- Showtime Slots Grid -->    
+            <!-- Showtime Slots Grid -->
             <div class="glass-panel rounded-3xl p-6 sm:p-8 space-y-8 max-w-4xl mx-auto">
                 <div class=" justify-between border-b border-white/10 pb-4">
                   
