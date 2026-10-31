@@ -92,12 +92,13 @@
         </div>
 
         <!-- Right Column: Booking Summary Sidebar -->
+        <!-- UPDATE TO THIS: -->
         <div class="col-lg-4">
-          <div class="bg-cinema-card p-4">
-            <h5 class="fw-bold border-bottom border-dark pb-3 mb-3">Booking Details</h5>
-            <p id="booking-movie-title" class="mb-1 fw-bold">Avengers: Doomsday</p>
-            <p id="booking-movie-format" class="text-muted small">Cinema 1 • IMAX 3D</p>
-            <p class="text-muted small mb-3">Today, 7:30 PM</p>
+            <div class="bg-cinema-card p-4">
+              <h5 class="fw-bold border-bottom border-dark pb-3 mb-3">Booking Details</h5>
+              <p id="booking-movie-title" class="mb-1 fw-bold">Avengers: Doomsday</p>
+              <p id="booking-movie-format" class="text-muted small mb-1">SM City San Lazaro Cinema • IMAX 3D</p>
+              <p id="booking-movie-time" class="text-muted small mb-3">Today, 7:30 PM</p>
             <div class="d-flex justify-content-between my-2">
               <span>Seats Selected:</span>
               <span class="fw-bold text-light" id="selected-count">0</span>
@@ -106,7 +107,7 @@
               <span>Total:</span>
               <span class="fw-bold text-danger" id="total-price">₱0</span>
             </div>
-            <a href="checkout.html" class="btn btn-cinema w-100 mt-4">Proceed to Checkout</a>
+            <a id="proceed-to-seats-btn" href="checkout.html" class="btn btn-cinema w-100 mt-4">Proceed to Checkout</a>
           </div>
         </div>
       </div>
