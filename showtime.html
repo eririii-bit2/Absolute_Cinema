@@ -81,7 +81,7 @@
             <!-- IMAX 3D Experience Slots -->
 				            <div class="d-flex justify-content-between align-items-start border-bottom border-secondary border-opacity-25 pb-3 mb-4">
 								            <div>  
-								         			   <h3 id="showtime-movie-title" class="fw-bold text-white text-white tracking-wider mb-1">AVENGERS: DOOMSDAY</h3>
+								         			   <h4 id="showtime-movie-title" class="fw-bold mb-1">AVENGERS: DOOMSDAY</h4>
 								            				<p id="showtime-cinema-name" class="text-xs text-brand-textMuted">NCR – Metro Manila • Screen 1 curved IMAX</p>
 								            </div>
 				            <span class="badge bg-danger bg-opacity-25 text-danger px-3 py-2 rounded-pill fw-bold" style="font-size: 11px;">Today Available</span>
@@ -95,34 +95,34 @@
 				                    
 				              <div class="mt-3 row g-3">
 				                <div class="col-6 col-sm-3">
-				                  <button onclick="selectTimeSlot('1:00 PM', 'IMAX 3D', 875)" class="btn btn-outline-secondary border-2 text-white w-100 py-2">
+				                  <button type="button" data-time="1:00 PM" onclick="selectTimeSlot('1:00 PM', 'IMAX 3D', this)" class="btn btn-outline-secondary border-2 text-white w-100 py-2">
 				                    <span class="d-block fw-bold">1:00 PM</span>
 				                    <small class="text-muted" style="font-size: 10px;">Available</small>
 				                  </button>
 				                </div>
 				                
 				                <div class="col-6 col-sm-3">
-				                  <button onclick="selectTimeSlot('4:15 PM', 'IMAX 3D', 875)" class="btn btn-outline-secondary border-2 text-white w-100 py-2">
+				                  <button type="button" data-time="4:15 PM" onclick="selectTimeSlot('4:15 PM', 'IMAX 3D', this)" class="btn btn-outline-secondary border-2 text-white w-100 py-2">
 				                    <span class="d-block fw-bold">4:15 PM</span>
 				                    <small class="text-muted" style="font-size: 10px;">Filling Fast</small>
 				                  </button>
 				                </div>
 				                
 				                <div class="col-6 col-sm-3">
-				                  <button onclick="selectTimeSlot('7:30 PM', 'IMAX 3D', 875)" class="btn btn-outline-danger border-2 text-white w-100 py-2" style="background-color: rgba(229, 9, 20, 0.15); box-shadow: 0 0 10px rgba(229, 9, 20, 0.4);">
+				                  <button type="button" data-time="7:30 PM" onclick="selectTimeSlot('7:30 PM', 'IMAX 3D', this)" class="btn btn-outline-secondary border-2 text-white w-100 py-2">
 				                    <span class="d-block fw-bold">7:30 PM</span>
 				                    <small class="text-white" style="font-size: 10px;">Prime Time</small>
 				                  </button>
 				                </div>
 				                
 				                <div class="col-6 col-sm-3">
-				                  <button onclick="selectTimeSlot('10:15 PM', 'IMAX 3D', 875)" class="btn btn-outline-secondary border-2 text-white w-100 py-2">
+				                  <button type="button" data-time="10:15 PM" onclick="selectTimeSlot('10:15 PM', 'IMAX 3D', this)" class="btn btn-outline-secondary border-2 text-white w-100 py-2">
 				                    <span class="d-block fw-bold">10:15 PM</span>
 				                    <small class="text-muted" style="font-size: 10px;">Late Night</small>
 				                  </button>
 				                </div>	
 				                
-				                								<a href="select-seats.html" class="btn btn-cinema">Proceed to select seats</a>	 
+				                								<a id="proceed-to-seats-btn" href="select-seats.html" class="btn btn-cinema">Proceed to select seats</a> 
 				                </div>
            								</div>
             
