@@ -181,12 +181,12 @@ function renderDateStrip() {
     if (!strip) return;
 
     const dates = [
-        { day: 'MON', num: '26', full: 'Mon, Oct 26', active: true },
+        { day: 'MON', num: '26', full: 'Mon, Oct 26', active: false },
         { day: 'TUE', num: '27', full: 'Tue, Oct 27', active: false },
         { day: 'WED', num: '28', full: 'Wed, Oct 28', active: false },
         { day: 'THU', num: '29', full: 'Thu, Oct 29', active: false },
         { day: 'FRI', num: '30', full: 'Fri, Oct 30', active: false },
-        { day: 'SAT', num: '31', full: 'Sat, Oct 31', active: false }
+        { day: 'SAT', num: '31', full: 'Sat, Oct 31', active: true }
     ];
 
     strip.innerHTML = dates.map(d => `
@@ -194,8 +194,8 @@ function renderDateStrip() {
             onclick="setDate('${d.full}', this)"
             class="date-btn flex-shrink-0 w-16 h-20 rounded-2xl
             ${d.active
-                ? 'bg-brand-red text-white shadow-glow-red'
-                : 'bg-white/5 text-brand-textMuted border border-white/10 hover:text-white'}
+                ? 'bg-danger bg-opacity-25 text-white shadow-glow-red'
+                : 'bg-white/5 text-muted border-white/10 hover:text-white'}
             flex flex-col items-center justify-center transition">
 
             <span class="text-[10px] font-bold uppercase">${d.day}</span>
@@ -209,9 +209,10 @@ function setDate(dateStr, btn) {
 
     document.querySelectorAll('.date-btn').forEach(b => {
         b.classList.remove(
-            'bg-brand-red',
+            'bg-danger',
             'text-white',
-            'shadow-glow-red'
+            'shadow-glow-red',
+      														'bg-opacity-25'
         );
 
         b.classList.add(
@@ -221,7 +222,8 @@ function setDate(dateStr, btn) {
     });
 
     btn.classList.add(
-        'bg-brand-red',
+        'bg-danger',
+  														'bg-opacity-25',
         'text-white',
         'shadow-glow-red'
     );
