@@ -59,7 +59,7 @@
     <div class="col-md-8">
       <div class="bg-cinema-card p-4 p-md-5">
         <h3 class="fw-bold mb-4"><i class="bi bi-credit-card text-danger me-2"></i>Payment Checkout</h3>
-        <form action="confirmation.html">
+        <form id="checkout-form" action="confirmation.html">
           <div class="mb-3">
             <label class="form-label">Full Name</label>
             <input type="text" class="form-control bg-dark text-light border-secondary" value="Juan Dela Cruz" required>
@@ -80,7 +80,7 @@
             <label class="form-label">Card Number</label>
             <input type="text" class="form-control bg-dark text-light border-secondary" placeholder="**** **** **** 1234" required>
           </div>
-          <button type="submit" class="btn btn-cinema w-100 btn-lg mt-3">Confirm Payment (₱700)</button>
+          <button id="checkout-submit-btn" type="submit" class="btn btn-cinema w-100 btn-lg mt-3">Confirm Payment (₱0)</button>
         </form>
       </div>
     </div>
